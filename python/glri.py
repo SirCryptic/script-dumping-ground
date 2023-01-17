@@ -20,3 +20,6 @@ long = long[0][0] / long[0][1] + long[1][0] / (long[1][1] * 60) + long[2][0] / (
 
 print("Latitude: ", lat)
 print("Longitude: ", long)
+
+
+#script that can read image meta data from a website and then use it to perform a reverse image search and geo-locate the image
