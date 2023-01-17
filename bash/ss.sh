@@ -1,4 +1,4 @@
-/bin/bash
+#!/bin/bash
 
 # Function to check for outdated packages
 check_packages() {
