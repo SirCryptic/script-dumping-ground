@@ -1,4 +1,4 @@
-/bin/bash
+#!/bin/bash
 # Developer: SirCryptic | NullSecurityTeam | https://github.com/SirCryptic
 # Info: 1.1 WifiDie | Original Repo ( https://github.com/SirCryptic/script-dumping-ground/blob/main/bash/wifidie.sh )
 # PLEASE USE RESPONSIBLY I AM NOT LIABLE FOR YOUR MISUSE OF THIS SCRIPT, IT IS JUST A MERE EDUCATIONAL TOOL INTENDED TO TROLL FRIENDS AND FAMILY ON THE SAME NETWORK.
