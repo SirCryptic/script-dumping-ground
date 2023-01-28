@@ -1,13 +1,19 @@
-﻿#!/usr/bin/python
+#!/usr/bin/env python
+import cfscrape
+import re
 
-import time
-import os
-import sys
-import requests
+# Developer: SirCryptic (NullSecurityTeam)
+# Info: Cloudfare Resolver 1.1 
+# Create a scraper object
+scraper = cfscrape.create_scraper()
 
-print("CloudFare Resolver")
+# Enter target website
+target = input("Enter target website: ")
 
-target=input('\bEnter Target : ')
-r=requests.get('https://dns.google.com/query?name=' + target)
-print('\bResult:')
-print(r.txt)
+# Send a GET request to the target URL with the user-agent of a browser
+r = scraper.get(target, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36'})
+
+# Extract the true IP address from the response
+ip_address = re.search(r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}', r.text).group()
+
+print("True IP address: " + ip_address)
