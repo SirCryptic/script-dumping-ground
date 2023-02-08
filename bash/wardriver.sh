@@ -68,6 +68,21 @@ elif [ "$choice" == "2" ]; then
 
   echo "Scan complete, results stored in available_bluetooth_devices.txt."
 
+  # Attempt to connect to each device in the stored file
+  while read -r device_address; do
+    echo "Attempting to connect to device with address $device_address..."
+
+    # Use the bluez-simple-agent tool to connect to the device
+    bluez-simple-agent hci0 "$device_address"
+
+    # Check the return value of the previous command to see if the connection was successful
+    if [ $? -eq 0 ]; then
+      echo "Successfully connected to device with address $device_address."
+    else
+      echo "Failed to connect to device with address $device_address."
+    fi
+  done < available_bluetooth_devices.txt
+
 else
   echo "Invalid choice, please enter 1 or 2."
 fi
