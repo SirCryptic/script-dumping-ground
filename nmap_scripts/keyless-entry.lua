@@ -5,7 +5,7 @@ This script attempts to retrieve the target host's SSH host key.
 If the host key retrieval fails, it tries ftp-anon access.
 If ftp-anon access is successful, it spawns a shell.
 Developed By: SirCryptic (NullSecurityTeam)
-~Greetz To The World
+~ Greetz To The World
 ]]
 
 local target = arg[1]
