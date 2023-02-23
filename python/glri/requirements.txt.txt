@@ -1,0 +1,5 @@
+Pillow==8.4.0
+requests==2.26.0
+pyzbar==0.1.8
+tqdm==4.62.3
+geopy==2.2.0
