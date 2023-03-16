@@ -23,6 +23,7 @@ you can add more admin control panel possibilities yourself via the [admin_urls.
 - Read control panel possibilities from a text file rather than stored as array
 - Use random user agents
 - Use command history / support for proper keyboard input
+- Public Release
 ## Contributors
 - [Mobly](https://github.com/Elliot-Hyphen)
 - [Double A](https://github.com/double404)
