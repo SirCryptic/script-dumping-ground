@@ -1,6 +1,12 @@
 # Easy To Maintain Admin Control Panel Finder [BETA]
 A Bash Based Admin Control Panel finder using random user agents for domains and IP's. Please note that this tool is in beta and has been since 2018.
 
+| Name | Team | GitHub | Team Github |
+|------|------|--------|-------------|
+| SirCryptic | NST   | [@SirCryptic](https://github.com/SirCryptic)  | [@NullSecurityTeam](https://github.com/NULL-Security-Team) |
+| M0bly | NST  | [@M0bly](https://github.com/Elliot-Hyphen) | [@NullSecurityTeam](https://github.com/NULL-Security-Team)  |
+| Double A | NST | [@Double A](https://github.com/double404)| [@NullSecurityTeam](https://github.com/NULL-Security-Team) |
+
 ## Usage
 - Clone the repository
 - Ensure that you have curl installed on your machine. [obvs]
