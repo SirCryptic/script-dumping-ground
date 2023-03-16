@@ -133,7 +133,7 @@ while read url_suffix; do
     # Display the URL and the status code
     echo "${cyan}URL:${reset} $url"
     echo "${magenta}User agent:${reset} $user_agent"
-    echo "${yellow}Status code:${reset} $status"
+    echo "${yellow}Status code:${reset} $status Unknown (EMPTY)"
     echo ""
     echo "-----------------------------------------"
   fi
