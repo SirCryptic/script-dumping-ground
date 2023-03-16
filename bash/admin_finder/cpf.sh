@@ -97,6 +97,12 @@ while read url_suffix; do
     echo "${yellow}Status code:${reset} $status Not Found"
     echo ""
     echo "-----------------------------------------"
+  elif [[ "$status" == "403" ]]; then
+    echo "${cyan}URL:${reset} $url"
+    echo "${magenta}User agent:${reset} $user_agent"
+    echo "${yellow}Status code:${reset} $status Requested resource is forbidden"
+    echo ""
+    echo "-----------------------------------------"
   elif [[ "$status" == "404" ]]; then
     echo "${cyan}URL:${reset} $url"
     echo "${magenta}User agent:${reset} $user_agent"
